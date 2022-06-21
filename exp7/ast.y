@@ -76,26 +76,6 @@ main() {
  preorder(root); 
  printf("\n");
  return 0;
-
- /* 
-  exp'+'exp { struct node *interiorNode = makeNode('+', $1, $3);
-                  $$ = interiorNode;
-                  root = interiorNode;
-               }
-   | exp'-'exp { struct node *interiorNode = makeNode('-', $1, $3);
-                  $$ = interiorNode;
-                  root = interiorNode;
-               }
-   | exp'/'exp { struct node *interiorNode = makeNode('+', $1, $3);
-                  $$ = interiorNode;
-                  root = interiorNode;
-               }
-   | exp'*'exp { struct node *interiorNode = makeNode('+', $1, $3);
-                  $$ = interiorNode;
-                  root = interiorNode;
-               }
-   | '(' exp ')' { $$ = $2; }
-  */
 }
 
 void yyerror(const char *s) {
